@@ -2,7 +2,7 @@
 layout: post
 title: Search for Extra Terrestrial Intelligence using Machine Learning
 subtitle: Improve classification of radio signals from cosmic sources 
-gh-repo: daattali/beautiful-jekyll
+gh-repo: probabilityfilter/ML-SETI-IBM
 gh-badge: [star, fork, follow]
 tags: [tet]
 comments: true
