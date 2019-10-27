@@ -31,7 +31,6 @@ Any data collected in the real world will have noise. One of the first steps was
 ![Signals](/img/SETI using ML/BasicData_4types.JPG "4 types of signals"){: .center-block :}  
 
 ## Hackathon
-
 The Hackathon was held in San Francisco, CA. The above Signal Processing allowed my team to plot the data in such a way that the clusters were clearly visible. As seen in the Leader Board my team 'Benders' won the Signal Processing Contest part of the Hackathon. Brownie points to anyone who can guess the pop culture reference of the team's name. [Code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/Arun_nonNN%2BHakcathonBasic.ipynb).
 
 ![Scatter](/img/SETI using ML/BasicData_clusters.JPG "4 clear clusters"){: .center-block :}  
