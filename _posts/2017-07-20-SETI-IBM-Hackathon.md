@@ -26,7 +26,6 @@ Many thanks to the wonderful people from IBM and SETI who gave me this opportuni
 ![people](/img/SETI using ML/people.jpg "Highlight of my day"){: .center-block :}  
 
 ## Digital Signal Processing
-
 Any data collected in the real world will have noise. One of the first steps was to deal with the SNR (Signal to Noise Ratio) and extra relevant data so that our Machine Learning algorithm can do a better job at classifying the signals. Here are four types of radio signals that have been extracted from noisy data. This simplified image will enhance the speed and accuracy of the Machine Learning algorithm downstream in the data pipeline. [Code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/ArunPrimary_testset_preview_DSP.ipynb).
 ![Signals](/img/SETI using ML/BasicData_4types.JPG "4 types of signals"){: .center-block :}  
 
@@ -36,5 +35,5 @@ The Hackathon was held in San Francisco, CA. The above Signal Processing allowed
 ![Scatter](/img/SETI using ML/BasicData_clusters.JPG "4 clear clusters"){: .center-block :}  
 ![LeaderBoard](/img/SETI using ML/LeaderBoard_SignalProcessingContest.jpg "woohoo..... we are winning"){: .center-block :}  
 
-A proud moment for me :smile:  
+A proud moment for me :smile:
 ![Award](/img/SETI using ML/award_win.jpg "3 sleepless nights but grinning"){: .center-block :}  
