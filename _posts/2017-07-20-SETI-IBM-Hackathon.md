@@ -35,7 +35,10 @@ The Hackathon was held in San Francisco, CA. The above Signal Processing allowed
 ![Scatter](/img/SETI using ML/BasicData_clusters.JPG "4 clear clusters"){: .center-block :}  
 ![LeaderBoard](/img/SETI using ML/LeaderBoard_SignalProcessingContest.jpg "woohoo..... we are winning"){: .center-block :}  
 
+Next step: [Code Challenge](https://probabilityfilter.github.io/2017-09-10-SETI-IBM-CodeChallenge/)
+
 A proud moment for me :smile:
 ![Award](/img/SETI using ML/award_win.jpg "3 sleepless nights but grinning"){: .center-block :}
 
-Next step: [Code Challenge](https://probabilityfilter.github.io/2017-09-10-SETI-IBM-CodeChallenge/)
+Here is our team being [interviewed](https://youtu.be/yYk4eNAVR1k?t=1197).
+![Team](/img/SETI using ML/Team.JPG "Woohoo"){: .center-block :}  
