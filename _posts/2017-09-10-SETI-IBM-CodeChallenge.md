@@ -44,5 +44,4 @@ I had to resort to some creative visualizations but the low SNR and higher numbe
 
 The Code Challenge that followed the Hackathon focused on bringing the powers of Supervised Learning to the task of classifying the signals into seven categories. Although the winning team attained a 95% signal classification accuracy, the Universe does not limit itself to just seven categories. Hence, I firmly believe that this is an appropriate problem for Unsupervised Learning algorithms which could detect previously unseen yet interesting signals.
 
-Here's yours truely:
-https://youtu.be/Yn2SBPs5-88?t=1822
+Here's yours truly giving a [brief explanation of my feature extraction work](https://youtu.be/Yn2SBPs5-88?t=1822).
