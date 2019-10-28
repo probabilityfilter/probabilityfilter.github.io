@@ -5,7 +5,7 @@ subtitle: Improve classification of radio signals from cosmic sources
 gh-repo: probabilityfilter
 gh-badge: [star, fork, follow]
 tags: [Machine Learning, Data Analysis, Jupyter Notebooks, Python, NumPy, astronomy]
-youtubeId: putYourIDHere
+youtubeId: Yn2SBPs5-88
 comments: true
 ---
 
@@ -47,4 +47,5 @@ The Code Challenge that followed the Hackathon focused on bringing the powers of
 
 Here's yours truly giving a [brief explanation of my feature extraction work](https://youtu.be/Yn2SBPs5-88?t=1822).
 {% include youtube.html id=Yn2SBPs5-88 %}
-{% include youtubePlayer.html id=page.youtubeId %}
+asdasd
+{% include youtube.html id=page.youtubeId %}
