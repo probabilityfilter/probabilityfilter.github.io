@@ -25,10 +25,10 @@ The [Hackathon](https://probabilityfilter.github.io/2017-07-20-SETI-IBM-Hackatho
 
 The Code Challenge was a whole different animal since we had to deal with a low SNR and the number of signal classes went up from 4 to 7. My Hackathon methods, more like tricks, could not rescue me!! Many of the signals were invisible to the eye, extreme data processing was required to start seeing these signals. [Code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/ArunBasic_DSP_try.ipynb).
 
-Here is one signal; top figure - hard to discern the signal, middle figure - better after adjusting amplitude and removing color, last figure - actual signal  
+Here is one signal; top figure - hard to discern the signal, middle figure - better after FFT and removing color, last figure - actual signal  
 ![Compare](/img/SETI Code Challenge/Compare.jpg "Barely visible"){: .center-block :}  
 
-Here is a challenging one; top figure - impossible to see the signal, bottom figure - slight improvement after adjusting the color  
+Here is a challenging one; top figure - impossible to see the signal, bottom figure - slight improvement after FFT cleanup  
 ![Compares](/img/SETI Code Challenge/Compare2.jpg "Impossible to discern"){: .center-block :}  
 
 I had to resort to some creative visualizations but the low SNR and higher number of classes proved to be a challenge. Here are some artistic results, each color represents a type of signal: [Code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/Arun_nonNN%2BPrimary_testset_preview.ipynb).
