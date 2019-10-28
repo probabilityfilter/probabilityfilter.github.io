@@ -5,7 +5,6 @@ subtitle: Improve classification of radio signals from cosmic sources
 gh-repo: probabilityfilter
 gh-badge: [star, fork, follow]
 tags: [Machine Learning, Data Analysis, Jupyter Notebooks, Python, NumPy, astronomy]
-youtubeId: Yn2SBPs5-88
 comments: true
 ---
 
@@ -45,7 +44,5 @@ I had to resort to some creative visualizations but the low SNR and higher numbe
 
 The Code Challenge that followed the Hackathon focused on bringing the powers of Supervised Learning to the task of classifying the signals into seven categories. Although the winning team attained a 95% signal classification accuracy, the Universe does not limit itself to just seven categories. Hence, I firmly believe that this is an appropriate problem for Unsupervised Learning algorithms which could detect previously unseen yet interesting signals.
 
-Here's yours truly giving a [brief explanation of the feature extraction work](https://youtu.be/Yn2SBPs5-88?t=1822) @ 30min 22sec
-![Presenting](/img/SETI Code Challenge/Presenting.JPG "Feature Extraction"){: .center-block :}(https://youtu.be/Yn2SBPs5-88?t=1822)  
-aaaa  
-{% include youtube.html id=page.youtubeId %}
+Here's yours truly giving a [brief explanation of the feature extraction work](https://youtu.be/Yn2SBPs5-88?t=1822)
+![Presenting](/img/SETI Code Challenge/Presenting.JPG "Feature Extraction"){: .center-block :}
