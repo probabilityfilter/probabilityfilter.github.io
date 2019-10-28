@@ -10,7 +10,30 @@ comments: true
 
 ## Code Challenge
 
-The Code Challenge was whole different animal since we had to deal with a low SNR and the number of signal classes went up from 4 to 7. My Hackathon methods did not rescue me!! Many of the signals were invisible to the eye, extreme data processing was required to start seeing these signals. [Code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/ArunBasic_DSP_try.ipynb).
+The [Hackathon](https://probabilityfilter.github.io/2017-07-20-SETI-IBM-Hackathon/) was followed by 4 weeks of Code Challenge. A new and expanded dataset was released. Here is how the progression look:
+- Primary Small
+  - Use for early-stage prototyping
+  - All 7 signal classifications
+  - 1,000 simulations / class (7 classes = 7,000 files)
+  - Available as single zip file
+  - ~2 GB in total
+
+*Primary Medium
+Use for early-stage prototyping & model building
+    All 7 signal classifications
+    5,000 simulations / class (7 classes = 35,000 files)
+    Large enough for relatively robust model construction
+    Available in 5 separate zip files
+    ~10 GB in total
+
+*Primary Full
+Use only if you want an enormous training data set. You will need a small data center to process these data in a reasonable amount of time.
+    All 7 signal classifications
+    20,000 simulations / class (7 classes = 140,000 files)
+    Only available in 140k individual files
+        one must read through the index file and download files individually, which will take some time from outside of IBM Cloud systems
+    ~50 GB in total
+. was whole different animal since we had to deal with a low SNR and the number of signal classes went up from 4 to 7. My Hackathon methods did not rescue me!! Many of the signals were invisible to the eye, extreme data processing was required to start seeing these signals. [Code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/ArunBasic_DSP_try.ipynb).
 
 Here is one signal; top figure - hard to discern the signal, middle figure - better after adjusting amplitude and removing color, last figure - actual signal  
 ![Compare](/img/SETI Code Challenge/Compare.jpg "Barely visible"){: .center-block :}  
