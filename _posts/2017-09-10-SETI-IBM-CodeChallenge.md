@@ -10,6 +10,9 @@ comments: true
 
 ## Code Challenge
 
+Can you see a signal? may be a line, a dashed line, something? anything! Read on  
+![Signal](/img/SETI Code Challenge/Is there a signal.jpg "May be just noise?!?"){: .center-block :} 
+
 The [Hackathon](https://probabilityfilter.github.io/2017-07-20-SETI-IBM-Hackathon/) was followed by 4 weeks of Code Challenge. A new and expanded dataset was released. Here is how the progression looked:
 - Primary Small Dataset
   - To be used for early-stage prototyping, ~2 GB in total
