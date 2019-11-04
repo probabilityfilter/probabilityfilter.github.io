@@ -9,7 +9,6 @@ comments: true
 ---
 
 ![gif](/img/Cartesian to Spherical/CandidatesInSky_Fast.gif "Oh look its spinning"){: .center-block :}  
-
 ## Star Locations
 This is where my inner geek took over the steering wheel! As a warm up SETI had given the participants an introductory dataset. Among other things the dataset contained the location of all the target stars that the [Allen Telescope Array](https://www.seti.org/seti-institute/project/details/fact-sheet) (radio telescope array) had pointed to collect signals originating from possible extraterrestrial sources. There was no need for anyone to plot the distribution of the target star systems but curiosity got the better of me. Once I was done, I realized that a good visualization enables the viewer to gain a deeper understanding of the data.
 
