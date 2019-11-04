@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kepler Exoplanet Data - Cartesian-to-Spherical Projection
+title: Kepler Exoplanet Data - Cartesian to Spherical Projection
 subtitle: Convert star locations from a rectangle to a sphere and make it spin! 
 gh-repo: probabilityfilter
 gh-badge: [star, fork, follow]
