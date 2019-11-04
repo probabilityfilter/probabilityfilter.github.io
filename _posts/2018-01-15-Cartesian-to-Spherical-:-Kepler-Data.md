@@ -20,5 +20,4 @@ As a bonus material, I isolated the Kepler Field which clearly shows the '+' lik
 
 ![Kepler](/img/Cartesian to Spherical/KeplerField.JPG "The ever beautiful Kepler Field"){: .center-block :}  
 
-And here is my Ode to the Kepler mission:
-https://twitter.com/click_arun/status/1016406934302257152
+And here is my [Ode to the Kepler mission](https://twitter.com/click_arun/status/1016406934302257152)
