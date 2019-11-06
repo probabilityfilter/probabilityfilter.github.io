@@ -12,6 +12,9 @@ comments: true
 
 This is where my inner geek took over the steering wheel. What if I could map a flat Cartesian co-ordinate system onto a Spherical co-ordinate system!?! As a warm up SETI had given the participants an introductory dataset which contained the location of all the target stars that the [Allen Telescope Array](https://www.seti.org/seti-institute/project/details/fact-sheet) (radio telescope array) had aimed at to collect signals originating from possible extraterrestrial sources. Star locations are given in RA (right ascension) and Dec (declination) that correspond to longitude and latitude on Earth. RA is location along the East/West and is measured in hours minutes and seconds of time so it goes from 0 to 24. Dec is location along the up and down direction and is measured in degrees so it goes from -90 to +90. There was no need for anyone to plot the distribution of the target star systems but curiosity got the better of me. Once I was done, I realized that a good visualization enables the viewer to gain a deeper understanding of the data.
 
+This is how the star locations looked like in the Cartesian co-ordinate system:
+![Flat](/img/Cartesian to Spherical/Density plot of Candidates.JPG "This is so flat"){: .center-block :} 
+
 ## Star Locations
 To achieve this visualization I took the Dec and RA system, which are the x-y co-ordinates ([code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/CandidateLocation_BySize.ipynb)), used NumPy and my mathematical skills to map this Cartesian system onto a Spherical co-ordinate and represented the target stars on a celestial sphere. The magnanimity of SETI's undertaking was so utterly impressive that this result appeared in an article by IBM and IBM Watson Data Lab [tweeted](https://twitter.com/WatsonDataLab/status/864494962280460288) about it ([code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/RA_Dec_to_SphericalSystem.ipynb)). 
 
