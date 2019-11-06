@@ -21,7 +21,7 @@ While the application of Machine Learning to SETI’s radio telescope data will 
 
 Even though Machine Learning garners the highest appeal, I realize that there will be significant amount of ancillary work to be done, ex. setting up a data pipeline, choosing the right metric, testing etc.
 
-Many thanks to the wonderful people from IBM and SETI who gave me this opportunity ........ and yes that is the legendary Jill Tarter. Her astronomical work is the source for Carl Sagan's novel Contact which was adapted into the film 'Contact' played by Jodie Foster.
+Many thanks to the wonderful people from IBM and SETI who gave me this opportunity ........ and yes that is the legendary Jill Tarter. Her astronomical work is the source for Carl Sagan's novel Contact which was adapted into the film ['Contact'](https://en.wikipedia.org/wiki/Contact_(1997_American_film)) played by Jodie Foster.
 
 ![people](/img/SETI using ML/people.jpg "Highlight of my day"){: .center-block :}  
 
