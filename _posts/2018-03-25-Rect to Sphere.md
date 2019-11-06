@@ -8,11 +8,24 @@ tags: [Data Visualization, Python, NumPy, Matplotlib]
 comments: true
 ---
 
-![hackathon award](probabilityfilter/Learn-Python/RectToSphere/Cartesian coordinates.JPG "Award for Best"){: .center-block :}  
-![hackathon award](/probabilityfilter/Learn-Python/RectToSphere/Cartesian coordinates.JPG "Award for Best"){: .center-block :}  
-![hackathon award](//probabilityfilter/Learn-Python/RectToSphere/Cartesian coordinates.JPG "Award for Best"){: .center-block :}  
-![hackathon award](/Learn-Python/RectToSphere/Cartesian coordinates.JPG "Award for Best"){: .center-block :}  
-![people](/img/SETI using ML/people.jpg "Highlight of my day"){: .center-block :}  
+![Cartesian](/img/RectToSphere/Cartesian coordinates.JPG "Random Data"){: .center-block :}  
+This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
+![SphericalGrid](/img/RectToSphere/Spherical grid.JPG "Random Data"){: .center-block :}  
+
+This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below
+########################
+
+Then one has draw the grid using more trignometry and superimpose both plots.
+<code>
+
+The resulting plot will look like this
+![Spherical](/img/RectToSphere/Spherical coordinates.JPG "Random Data"){: .center-block :}  
+
+One thing to note here - notice the bunching up of points on the north and south pole?!
+
+
+
+
 Here is one element of a receiver/feed which is the essence of a radio telescope. The varying size of the spikes allow the radio telescopes at the Allen Telescope Array to capture different wavelengths of radio waves ...... who knows at what frequency the aliens are transmitting!  
 
 [SETI (Search for Extraterrestrial Intelligence)](https://www.seti.org/) Institute is dedicated to answering one of the most endearing questions – is there intelligent life elsewhere in the universe? To this end it runs the [Allen Telescope Array](https://www.seti.org/seti-institute/project/details/fact-sheet), a radio telescope array in Hat Creek Radio Observatory, northern California, which observes radio signals from distant stars and nebulae. This is a report of my efforts to participate in this cosmic pursuit.
