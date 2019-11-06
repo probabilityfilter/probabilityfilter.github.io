@@ -8,10 +8,8 @@ tags: [Machine Learning, Data Analysis, Jupyter Notebooks, Python, NumPy, astron
 comments: true
 ---
 
-## Code Challenge
-
-Can you spot a signal? may be a line, a dashed line, something? anything! Read on......  
 ![Signal](/img/SETI Code Challenge/Is there a signal.jpg "May be just noise?!?"){: .center-block :} 
+Can you spot a signal? may be a line, a dashed line, something? anything! Read on......  
 
 The [Hackathon](https://probabilityfilter.github.io/2017-07-20-SETI-IBM-Hackathon/) was followed by 4 weeks of Code Challenge. A new and expanded dataset was released. Here is how the progression looked:
 - Primary Small Dataset
@@ -26,6 +24,7 @@ The [Hackathon](https://probabilityfilter.github.io/2017-07-20-SETI-IBM-Hackatho
   - Enormous training data set, ~50 GB in total
   - Signals from all 7 classifications: 20,000 simulations/class
 
+## Code Challenge
 The Code Challenge was a whole different animal since we had to deal with a low SNR and the number of signal classes went up from 4 to 7. My Hackathon methods, more like tricks, could not rescue me!! Many of the signals were invisible to the eye, extreme data processing was required to start seeing these signals. [Code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/ArunBasic_DSP_try.ipynb).
 
 Here is one signal; top figure - hard to discern the signal, middle figure - better after FFT and removing color, last figure - actual signal  
@@ -37,7 +36,7 @@ Here is a challenging one; top figure - impossible to see the signal, bottom fig
 I had to resort to some creative visualizations but the low SNR and higher number of classes proved to be a challenge. Here are some artistic results, each color represents a type of signal: [Code](https://github.com/probabilityfilter/ML-SETI-IBM/blob/master/notebooks/Arun_nonNN%2BPrimary_testset_preview.ipynb).
 ![DSP1](/img/SETI Code Challenge/PSmall_MenMedianRatio.JPG "Fountain :-)"){: .center-block :}  
 ![DSP2](/img/SETI Code Challenge/PSmall_pVal.JPG "Not very helpful"){: .center-block :}  
-![DSP3](/img/SETI Code Challenge/PSmall_pVal_slopeLinearFit.JPG "Buttetfly from top"){: .center-block :}  
+![DSP3](/img/SETI Code Challenge/PSmall_pVal_slopeLinearFit.JPG "Butterfly from top"){: .center-block :}  
 ![DSP4](/img/SETI Code Challenge/PSmall_StdDevTime.JPG "Taking off"){: .center-block :}  
 
 Here's yours truly giving a [brief explanation of the feature extraction work](https://youtu.be/Yn2SBPs5-88?t=1822)
