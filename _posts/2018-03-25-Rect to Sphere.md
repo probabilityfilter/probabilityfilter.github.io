@@ -12,19 +12,34 @@ comments: true
 This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
 ![SphericalGrid](/img/RectToSphere/Spherical grid.JPG "Random Data"){: .center-block :}  
 
-This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below, in our case:
-RA = 90 - phi
-Dec = 90 - theta
-Just change the corresponding sin and cos components
+This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below, in our case:  
+RA = 90 - \phi  
+Dec = 90 - \varphi  
+RA = 90 - $$\phi$$  
+Dec = 90 - $$\varphi$$  
+Just change the corresponding $$\sin$$ and $$\cos$$ components
 $$c = \pm\sqrt{a^2 + b^2}$$
+
 $$\alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi$$
+
 $$\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$$
+
 $$\sum_{\substack{
    0<i<m \\
    0<j<n
   }} 
  P(i,j)$$
 
+$$\int\limits_a^b$$
+
+$$A_{m,n} = 
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{pmatrix}$$
+ 
 ![Trignometry](/img/RectToSphere/Trignometry.png "Trignometry"){: .center-block :}  
 
 The spherical grid as shown earlier can be drawn by using the code below which uses some more trignometry:
