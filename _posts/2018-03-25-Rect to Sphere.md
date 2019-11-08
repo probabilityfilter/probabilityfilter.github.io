@@ -9,7 +9,7 @@ comments: true
 ---
 
 ![Cartesian](/img/RectToSphere/Cartesian coordinates.JPG "Random Data"){: .center-block :}  
-This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
+Born out of the [Hackathon](https://probabilityfilter.github.io/2017-07-20-SETI-IBM-Hackathon/) was a desire to view the celestial targets as they were in the [night sky](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
 ![SphericalGrid](/img/RectToSphere/Spherical grid.JPG "Random Data"){: .center-block :}  
 
 If you are in a hurry then go [see the code here](https://github.com/probabilityfilter/Learn-Python/blob/master/RectToSphere/RectToSphere.py) or else read along ....  
@@ -56,7 +56,7 @@ z = 1 * np.outer(np.ones(np.size(u)), np.cos(v))
 ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
 ```
   
-Combining the 3D representation of data and the spherical grid will produce this beautiful plot:
+Combining the 3D representation of data and the spherical grid will produce this beautiful plot. As for the [GIF](https://en.wikipedia.org/wiki/GIF), I drew (**view**) the below plot in incrementing angles, saved the images, and used one of the many GIF creators available online.
 ![Spherical](/img/RectToSphere/Spherical coordinates.JPG "Random Data"){: .center-block :}   
 
 One thing to note here, notice the bunching up of points on the North and South pole?! That is the opposite of the [Mercator Projection](https://en.wikipedia.org/wiki/Mercator_projection). In other words the data points close to the top and bottom of a Cartesian co-ordinate system will have less space to occupy when projected on to a sphere since the circumference of rings gets smaller as one approaches the poles! Neat :smile:
