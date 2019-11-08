@@ -15,7 +15,7 @@ This post will delve into the details of how the rotating celestial sphere was c
 This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below:
 ![Trignometry](/img/RectToSphere/Trignometry.png "Trignometry"){: .center-block :}  
 
-Then one has draw the grid using more trignometry and superimpose both plots.
+Now it is time to draw the spherical grid (as shown above) using more trignometry using the code below.
 <code>
 
 ~~~
@@ -73,7 +73,7 @@ z = 1 * np.outer(np.ones(np.size(u)), np.cos(v))
 ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
 ```
   
-The resulting plot will look like this
+Combining the 3D representation of data and the spherical grid will in this beautiful plot:
 ![Spherical](/img/RectToSphere/Spherical coordinates.JPG "Random Data"){: .center-block :}   
 
 One thing to note here - notice the bunching up of points on the north and south pole?!
