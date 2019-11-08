@@ -12,8 +12,8 @@ comments: true
 This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
 ![SphericalGrid](/img/RectToSphere/Spherical grid.JPG "Random Data"){: .center-block :}  
 
-This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below
-########################
+This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below:
+![Trignometry](/img/RectToSphere/Trignometry.png "Trignometry"){: .center-block :}  
 
 Then one has draw the grid using more trignometry and superimpose both plots.
 <code>
