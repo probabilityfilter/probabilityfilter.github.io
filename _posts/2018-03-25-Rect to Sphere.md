@@ -8,16 +8,58 @@ tags: [Data Visualization, Python, NumPy, Matplotlib]
 comments: true
 ---
 
-![Cartesian](/img/Rect To Sphere/Cartesian coordinates.JPG "Random Data"){: .center-block :}  
+![Cartesian](/img/RectToSphere/Cartesian coordinates.JPG "Random Data"){: .center-block :}  
 This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
-![SphericalGrid](/img/Rect To Sphere/Spherical grid.JPG "Random Data"){: .center-block :}  
+![SphericalGrid](/img/RectToSphere/Spherical grid.JPG "Random Data"){: .center-block :}  
 
 This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below
 ########################
 
 Then one has draw the grid using more trignometry and superimpose both plots.
 <code>
+
+~~~
+# Wireframe of Sky (sphere)
+fig = plt.figure(figsize=(5, 5))
+ax = fig.add_subplot(111, projection="3d")
+# Wireframe of Sphere
+u = np.linspace(0, 2 * np.pi, 100)
+v = np.linspace(0, np.pi, 100)
+x = 1 * np.outer(np.cos(u), np.sin(v))
+y = 1 * np.outer(np.sin(u), np.sin(v))
+z = 1 * np.outer(np.ones(np.size(u)), np.cos(v))
+# Overlaying Wireframe of Sky over Candidate data
+ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
+~~~
+
+```
+# Wireframe of Sky (sphere)
+fig = plt.figure(figsize=(5, 5))
+ax = fig.add_subplot(111, projection="3d")
+# Wireframe of Sphere
+u = np.linspace(0, 2 * np.pi, 100)
+v = np.linspace(0, np.pi, 100)
+x = 1 * np.outer(np.cos(u), np.sin(v))
+y = 1 * np.outer(np.sin(u), np.sin(v))
+z = 1 * np.outer(np.ones(np.size(u)), np.cos(v))
+# Overlaying Wireframe of Sky over Candidate data
+ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
+```
+  
 ```javascript
+# Wireframe of Sky (sphere)
+fig = plt.figure(figsize=(5, 5))
+ax = fig.add_subplot(111, projection="3d")
+# Wireframe of Sphere
+u = np.linspace(0, 2 * np.pi, 100)
+v = np.linspace(0, np.pi, 100)
+x = 1 * np.outer(np.cos(u), np.sin(v))
+y = 1 * np.outer(np.sin(u), np.sin(v))
+z = 1 * np.outer(np.ones(np.size(u)), np.cos(v))
+# Overlaying Wireframe of Sky over Candidate data
+ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
+```
+```python
 # Wireframe of Sky (sphere)
 fig = plt.figure(figsize=(5, 5))
 ax = fig.add_subplot(111, projection="3d")
@@ -32,7 +74,7 @@ ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
 ```
   
 The resulting plot will look like this
-![Spherical](/img/Rect To Sphere/Spherical coordinates.JPG "Random Data"){: .center-block :}  
+![Spherical](/img/RectToSphere/Spherical coordinates.JPG "Random Data"){: .center-block :}   
 
 One thing to note here - notice the bunching up of points on the north and south pole?!
 
