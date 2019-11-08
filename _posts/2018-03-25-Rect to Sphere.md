@@ -9,7 +9,7 @@ comments: true
 ---
 
 ![Cartesian](/img/RectToSphere/Cartesian coordinates.JPG "Random Data"){: .center-block :}  
-Born out of the [Hackathon](https://probabilityfilter.github.io/2017-07-20-SETI-IBM-Hackathon/) was a desire to view the celestial targets as they were in the [night sky](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
+Born out of the [Hackathon](https://probabilityfilter.github.io/2017-07-20-SETI-IBM-Hackathon/) was a desire to view the celestial targets as they appear in the [night sky](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
 ![SphericalGrid](/img/RectToSphere/Spherical grid.JPG "Random Data"){: .center-block :}  
 
 If you are in a hurry then go [see the code here](https://github.com/probabilityfilter/Learn-Python/blob/master/RectToSphere/RectToSphere.py) or else read along ....  
