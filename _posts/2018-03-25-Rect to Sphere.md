@@ -14,10 +14,30 @@ This post will delve into the details of how the rotating celestial sphere was c
 
 This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below, to adapt the formulae to our case either use:  
 RA = 90$$^o$$ - $$\varphi$$  
-RA = 90$$^{o}$$ - $$\varphi$$  
-Dec = 90 - $$\theta$$  
+Dec = 90$$^o$$ - $$\theta$$  
 or just swap the **sin** and **cos** operations.  
 ![Trignometry](/img/RectToSphere/Trignometry.png "Trignometry"){: .center-block :}  
+```python
+# Compute spherical co-ordinates
+k = 1  # Arbitrary radius
+# Initialize arrays
+ra = np.linspace(0, 1, N, dtype=float)  # RA: Right Ascension
+dec = np.linspace(0, 1, N, dtype=float)  # Dec: Declination
+t = np.linspace(0, 1, N, dtype=float)
+x3d = np.linspace(0, 1, N, dtype=float)
+y3d = np.linspace(0, 1, N, dtype=float)
+z3d = np.linspace(0, 1, N, dtype=float)
+
+# Convert RA's HH:MM:SS to Radians and Dec's degrees to Radians
+ra = np.multiply(xScaledValues, 2 * np.pi / 24)
+dec = np.multiply(yScaledValues, 2 * np.pi / 360)
+
+# Calculate projections of vector on x,y,z axis
+t = np.multiply(k, np.cos(dec))  # Projection of unit vector k on x-y plane
+x3d = np.multiply(t, np.cos(ra))  # Projection of t on x-axis
+y3d = np.multiply(k, np.sin(dec))  # Projection of unit vector k on y-axis
+z3d = np.multiply(t, np.sin(ra))  # Projection of t on z-axis
+```
 
 The spherical grid as shown earlier can be drawn by using the code below which uses some more trignometry:
 ```python
