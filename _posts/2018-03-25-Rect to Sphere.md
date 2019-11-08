@@ -60,5 +60,5 @@ Combining the 3D representation of data and the spherical grid will produce this
 ![Spherical](/img/RectToSphere/Spherical coordinates.JPG "Random Data"){: .center-block :}   
 
 One thing to note here, notice the bunching up of points on the North and South pole?! That is the opposite of the [Mercator Projection](https://en.wikipedia.org/wiki/Mercator_projection). In other words the data points close to the top and bottom of a Cartesian co-ordinate system will have less space to occupy when projected on to a sphere since the circumference of rings gets smaller as one approaches the poles! Neat :smile:
-![BunchingOfPoints](/img/RectToSphere/BunchingUp.JPG "anti-Mercaptor Projection Effect"){: .center-block :} 
+![BunchingOfPoints](/img/RectToSphere/BunchingUp.jpg "anti-Mercaptor Projection Effect"){: .center-block :} 
 
