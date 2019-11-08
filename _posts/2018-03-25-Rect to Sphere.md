@@ -13,7 +13,7 @@ This post will delve into the details of how the rotating celestial sphere was c
 ![SphericalGrid](/img/RectToSphere/Spherical grid.JPG "Random Data"){: .center-block :}  
 
 If you are in a hurry then go [see the code here](https://github.com/probabilityfilter/Learn-Python/blob/master/RectToSphere/RectToSphere.py) or else read along ....  
-This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below, to adapt the formulae to our case either use:  
+This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trigonometry as shown below, to adapt the formulae to our case either use:  
 RA = 90$$^o$$ - $$\varphi$$  
 Dec = 90$$^o$$ - $$\theta$$  
 or just swap the **sin** and **cos** operations.  
@@ -40,7 +40,7 @@ y3d = np.multiply(k, np.sin(dec))  # Projection of unit vector k on y-axis
 z3d = np.multiply(t, np.sin(ra))  # Projection of t on z-axis
 ```
 
-The spherical grid shown earlier can be drawn by using the code below which uses some more trignometry:
+The spherical grid shown earlier can be drawn by using the code below which uses some more trigonometry:
 ```python
 # Wireframe of Sky (sphere)
 fig = plt.figure(figsize=(5, 5))
@@ -59,5 +59,6 @@ ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
 Combining the 3D representation of data and the spherical grid will produce this beautiful plot:
 ![Spherical](/img/RectToSphere/Spherical coordinates.JPG "Random Data"){: .center-block :}   
 
-One thing to note here - notice the bunching up of points on the north and south pole?!
+One thing to note here, notice the bunching up of points on the North and South pole?! That is the opposite of the [Mercator Projection](https://en.wikipedia.org/wiki/Mercator_projection). In other words the data points close to the top and bottom of a Cartesian co-ordinate system will have less space to occupy when projected on to a sphere since the circumference of rings gets smaller as one approaches the poles! Neat :smile:
+![BunchingOfPoints](/img/RectToSphere/BunchingUp.JPG "anti-Mercaptor Projection Effect"){: .center-block :} 
 
