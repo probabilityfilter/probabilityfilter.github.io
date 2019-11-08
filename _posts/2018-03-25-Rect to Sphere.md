@@ -12,34 +12,11 @@ comments: true
 This post will delve into the details of how the rotating celestial sphere was created in the [previous post](https://probabilityfilter.github.io/2018-01-15-Cartesian-to-Spherical-Kepler-Data/). The challenge is to map the above distribution (random data) on to the spherical grid as shown below.
 ![SphericalGrid](/img/RectToSphere/Spherical grid.JPG "Random Data"){: .center-block :}  
 
-This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below, in our case:  
-RA = 90 - \phi  
-Dec = 90 - \varphi  
-RA = 90 - $$\phi$$  
-Dec = 90 - $$\varphi$$  
-Just change the corresponding $$\sin$$ and $$\cos$$ components
-$$c = \pm\sqrt{a^2 + b^2}$$
-
-$$\alpha, \Alpha, \beta, \Beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi$$
-
-$$\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$$
-
-$$\sum_{\substack{
-   0<i<m \\
-   0<j<n
-  }} 
- P(i,j)$$
-
-$$\int\limits_a^b$$
-
-$$A_{m,n} = 
- \begin{pmatrix}
-  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
-  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
-  \vdots  & \vdots  & \ddots & \vdots  \\
-  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
- \end{pmatrix}$$
- 
+This will be a two step process where the first step is to convert the x-y data that is in 2D to 3D co-ordinates as if we were to take a sheet of paper and warp it around a sphere. This will need some high school level trignometry as shown below, to adapt the formulae to our case either use:  
+RA = 90$$^o$$ - $$\varphi$$  
+RA = 90$$^{o}$$ - $$\varphi$$  
+Dec = 90 - $$\theta$$  
+or just swap the **sin** and **cos** operations.  
 ![Trignometry](/img/RectToSphere/Trignometry.png "Trignometry"){: .center-block :}  
 
 The spherical grid as shown earlier can be drawn by using the code below which uses some more trignometry:
@@ -57,7 +34,7 @@ z = 1 * np.outer(np.ones(np.size(u)), np.cos(v))
 ax.plot_wireframe(x, y, z, rstride=10, cstride=10, color="b", alpha=0.1)
 ```
   
-Combining the 3D representation of data and the spherical grid will in this beautiful plot:
+Combining the 3D representation of data and the spherical grid will produce this beautiful plot:
 ![Spherical](/img/RectToSphere/Spherical coordinates.JPG "Random Data"){: .center-block :}   
 
 One thing to note here - notice the bunching up of points on the north and south pole?!
