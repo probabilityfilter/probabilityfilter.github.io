@@ -15,6 +15,10 @@ The premise is that you start with a number on a number line, in the simple case
 
 Before we can code this process it will be beneficial to convert this into Maths so that we are clear about the underlying process. So let's say the initial position is $$x_{0}$$  
 say the initial position is $$x_{0}$${: .center-block :}  
+$$x_{0}$${: .center-block :}  
+$$x_{0}$$  
+\$$x_{0}$$  
+test $$x_{0}$$  
 
 $$
 \begin{align*}
