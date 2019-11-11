@@ -22,6 +22,7 @@ Toss a coin and choose to move left or right, the new position will be:
 $$ \begin{align*} x_{0} \pm 1 \end{align*} $$
 
 If we keep this going then we will get something like this:  
+
 $$ \begin{align*} x_{0} \pm 1 \pm 1 \pm 1 \pm 1 \pm 1 \pm \dotsc \end{align*} $$
 
 The sum of the above series will yield the final position of the Random Walk process. This can be interpreted as initial position plus a series of random choices between +1 and -1, thus we could rewrite the sum as:
@@ -31,9 +32,10 @@ $$ \begin{align*} x_{0} + x_{1} + x_{2} \dotsc \end{align*} $$
 where the likes of $$x_{1}$$ and $$x_{2}$$ are results of random choices between +1 and -1.
 
 One can agree that even though this series represents what we want to depict but it is inconvenient to write this expanded series all the time and what if we need to write many such series in a single formula!? So the mathematicians have come up with a shortened version which is written as:  
+
 $$ \begin{align*} \displaystyle\sum_{i=0}^{n} x_{i} \end{align*} $$
 
-So all we got to code is start with the initial number then run a loop and keep adding/subtracting a 1, simple isn't it. And since we said loop, let's use a simple **for loop**
+To code this, all we got to do is start with the initial number then run a loop and keep adding/subtracting a 1, simple isn't it. And since we said loop, let's use a simple **for loop**
 ```python
 # Random Walk in 1 dimension (no function, no class, no vectorization)
 import random
