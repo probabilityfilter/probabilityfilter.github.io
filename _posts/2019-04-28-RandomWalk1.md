@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Random Walk - Concept to Code Part 1
+title: Random Walk - Concept to Code, Part 1
 subtitle: Use a simple concept and learn to code it 
 gh-repo: probabilityfilter/Learn-Python
 gh-badge: [star, fork, follow]
