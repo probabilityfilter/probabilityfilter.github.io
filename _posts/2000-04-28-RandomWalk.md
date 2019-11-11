@@ -42,10 +42,10 @@ import random
 
 n = 100 # Total number random steps
 x = 0 # Starting position
-path = [] # Store all the intermediate steps
+path = [x] # Store all the intermediate steps
 
 for i in range(n):
-    x += 2*random.randint(0, 1) - 1 # Slight trickery to get only +/-1 and ignore 0
+    x += 2*random.randint(0, 1) - 1 # Little bit of Math trickery to get only +/-1 and ignore 0
     path.append(x) # Store the result of each step
 
 print(path)
@@ -53,7 +53,7 @@ print(path)
 
 And the result is:
 ```python
-[1, 0, 1, 0, -1, -2, -3, -2, -3, -4, -3, -2, -1, -2, -3, -2, -1, -2, -3, -2, -1, 0, -1, -2, -1, 0, 1, 0, 1, 2, 1, 2, 3, 4, 3, 4, 3, 4, 3, 2, 1, 2, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2, 1, 2, 1, 0, 1, 2, 3, 4, 3, 2, 3, 2, 1, 2, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 8, 7, 8, 9, 10, 9, 10, 9, 10, 11, 12, 11, 12, 11, 12, 11, 12, 11, 10, 9, 10, 9, 10]
+[0, 1, 0, 1, 0, -1, -2, -3, -2, -3, -4, -3, -2, -1, -2, -3, -2, -1, -2, -3, -2, -1, 0, -1, -2, -1, 0, 1, 0, 1, 2, 1, 2, 3, 4, 3, 4, 3, 4, 3, 2, 1, 2, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2, 1, 2, 1, 0, 1, 2, 3, 4, 3, 2, 3, 2, 1, 2, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 8, 7, 8, 9, 10, 9, 10, 9, 10, 11, 12, 11, 12, 11, 12, 11, 12, 11, 10, 9, 10, 9, 10]
 ```
 
 to codeHere is one element of a receiver/feed which is the essence of a radio telescope. The varying size of the spikes allow the radio telescopes at the Allen Telescope Array to capture different wavelengths of radio waves ...... who knows at what frequency the aliens are transmitting!  
