@@ -35,7 +35,7 @@ One can agree that even though this series represents what we want to depict but
 
 $$ \begin{align*} \displaystyle\sum_{i=0}^{n} x_{i} \end{align*} $$
 
-To code this, all we got to do is start with the initial number then run a loop and keep adding/subtracting a 1, simple isn't it. And since we said loop, let's use a simple **for loop** `for loop` 'for loop' "for loop" ,for loop,
+To code this, all we got to do is start with the initial number then run a loop and keep adding/subtracting a 1, simple isn't it. And since we said loop, let's use a simple `for loop`
 ```python
 # Random Walk in 1 dimension (no function, no class, no vectorization)
 import random
@@ -60,7 +60,7 @@ One thing to clarify right off the bat is that using a for loop is a telltale si
 
 Now imagine we wanted to answer the question of whether our Random Walker typically walks away from the starting position or returns back to it. The only way to answer this question is to run this code multiple times and may be even vary the number of steps taken. Yes, we could place the above code inside another for loop but remember what I said in the previous paragraph! So as a next step in programming like a pro, we shall use the concept of placing a modified version of this code inside a package called definition and using it multiple times.
 
-## Improvement #1: Use numpy's `random.choice`
+### Improvement #1: Use numpy's `random.choice`
 ```python
 import numpy as np
 print(np.random.choice([-1, +1], (10, 5)))
@@ -80,12 +80,12 @@ This would produce 5 columns of 10 random +/-1 choices representing 5 Random Wal
  [ 1  1 -1 -1  1]]
 ```
 
-## Improvement #2: Use numpy's `cumsum` to cumulatively add the random steps
+### Improvement #2: Use numpy's `cumsum` to cumulatively add the random steps
 ```python
 import numpy as np
 steps = np.random.choice([-1, +1], (5, 3))
 print("steps =\n", steps)
-print("path =\n", np.cumsum(steps, axis=0))
+print("path =\n", np.cumsum(steps, axis=0)) # Add along the column
 ```
 
 Just to simplify, I have shown 3 Random Walkers taking 5 steps each:
@@ -104,6 +104,7 @@ path =
  [-3 -1  3]]
 ```
 
+### Improvement #3: Use `functions`
 
 
 
