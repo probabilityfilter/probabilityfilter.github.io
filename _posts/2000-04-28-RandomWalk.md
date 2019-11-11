@@ -21,15 +21,38 @@ Toss a coin and choose to move left or right, the new position will be:
 
 $$ \begin{align*} x_{0} \pm 1 \end{align*} $$
 
-If we keep this going then we will get something like this:
+If we keep this going then we will get something like this:  
 $$ \begin{align*} x_{0} \pm 1 \pm 1 \pm 1 \pm 1 \pm 1 \pm \dotsc \end{align*} $$
 
 The sum of the above series will yield the final position of the Random Walk process. This can be interpreted as initial position plus a series of random choices between +1 and -1, thus we could rewrite the sum as:
 
 $$ \begin{align*} x_{0} + x_{1} + x_{2} \dotsc \end{align*} $$
-where the likes of $$x_{1}$$ and $$x_{2}$$ are results of random choices between +1 and -1. One can agree that even though this series represents what we want to depict but it is inconvenient to write this expanded series all the time and what if we need to write many such series in a single formula!? So the mathematicians have come up with a shortened version which is written as:
+
+where the likes of $$x_{1}$$ and $$x_{2}$$ are results of random choices between +1 and -1.
+
+One can agree that even though this series represents what we want to depict but it is inconvenient to write this expanded series all the time and what if we need to write many such series in a single formula!? So the mathematicians have come up with a shortened version which is written as:  
 $$ \begin{align*} \displaystyle\sum_{i=0}^{n} x_{i} \end{align*} $$
 
+So all we got to code is start with the initial number then run a loop and keep adding/subtracting a 1, simple isn't it. And since we said loop, let's use a simple **for loop**
+```python
+# Random Walk in 1 dimension (no function, no class, no vectorization)
+import random
+
+n = 100 # Total number random steps
+x = 0 # Starting position
+path = [] # Store all the intermediate steps
+
+for i in range(n):
+    x += 2*random.randint(0, 1) - 1 # Slight trickery to get only +/-1 and ignore 0
+    path.append(x) # Store the result of each step
+
+print(path)
+```
+
+And the result is:
+```python
+[1, 0, 1, 0, -1, -2, -3, -2, -3, -4, -3, -2, -1, -2, -3, -2, -1, -2, -3, -2, -1, 0, -1, -2, -1, 0, 1, 0, 1, 2, 1, 2, 3, 4, 3, 4, 3, 4, 3, 2, 1, 2, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2, 1, 2, 1, 0, 1, 2, 3, 4, 3, 2, 3, 2, 1, 2, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 8, 7, 8, 9, 10, 9, 10, 9, 10, 11, 12, 11, 12, 11, 12, 11, 12, 11, 10, 9, 10, 9, 10]
+```
 
 to codeHere is one element of a receiver/feed which is the essence of a radio telescope. The varying size of the spikes allow the radio telescopes at the Allen Telescope Array to capture different wavelengths of radio waves ...... who knows at what frequency the aliens are transmitting!  
 
