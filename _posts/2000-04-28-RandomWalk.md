@@ -25,7 +25,7 @@ If we keep this going then we will get something like this:
 
 $$ \begin{align*} x_{0} \pm 1 \pm 1 \pm 1 \pm 1 \pm 1 \dotsc \end{align*} $$  
 
-
+changeeeeee
 
 to codeHere is one element of a receiver/feed which is the essence of a radio telescope. The varying size of the spikes allow the radio telescopes at the Allen Telescope Array to capture different wavelengths of radio waves ...... who knows at what frequency the aliens are transmitting!  
 
