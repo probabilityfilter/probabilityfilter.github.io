@@ -14,27 +14,13 @@ In this post I will take a simple algorithm from its concept all the way to code
 The premise is that you start with a number on a number line, in the simple case a 0, then randomly pick either a 1 or a -1, say by tossing a coin. If you get a +1 then you take one step to the right, aka the positive side, whereas if you get a -1 then take one step to the left, the negative side. Now repeat the process of choosing 1 or -1, and subsequent moving, from this new position and keep repeating this multiple times. Simple enough?!
 
 Before we can code this process it will be beneficial to convert this into Maths so that we are clear about the underlying process. So let's say the initial position is:  
-$$ \begin{align*} x_{0} \end{align*} $$
+$$ \begin{align*} x_{0} \end{align*} $$  
 Toss a coin and choose to move left or right, the new position will be:  
-$$ \begin{align*} x_{0} \pm 1 \end{align*} $$
+$$ \begin{align*} x_{0} \pm 1 \end{align*} $$  
+If we keep this going then we will get something like this:  
+$$ \begin{align*} x_{0} \pm 1 \pm 1 \pm 1 \pm 1 \pm 1 \dotsc \end{align*} $$  
 
 
-$$
-\begin{align*}
-  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
-\end{align*}
-$$
 
 to codeHere is one element of a receiver/feed which is the essence of a radio telescope. The varying size of the spikes allow the radio telescopes at the Allen Telescope Array to capture different wavelengths of radio waves ...... who knows at what frequency the aliens are transmitting!  
 
