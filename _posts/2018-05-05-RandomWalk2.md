@@ -8,11 +8,11 @@ tags: [Python, NumPy]
 comments: true
 ---
 
-Continuing from the previous post [Random Walk - Concept to Code: Part 1]()
+Continuing from the previous post [Random Walk - Concept to Code: Part 1](https://probabilityfilter.github.io/2018-04-28-RandomWalk1/)
 ### Improvement #3: Use `functions`
+While learning a new concept its useful to ignore the fancy syntax and keywords and focus on the core feature that we are trying to implement. In this case the goal is to package our previous code such that instead of re-writing it we just give it a name and call it whenever we need the functionality. So in our case whenever we need a Random Walk to be calculated we will call the `function`. But once we call it to do a job we also need to give it some details for it to be useful to us, example values can be how many steps do you want the Random Walker to take, the starting value etc. Hence while creating the `function` we also provide few variables that the `function` will need to do its thing. 
 
-
-![RandomWalk](/img/RandomWalk1/GaltonBoard.jpg "Galton Board"){: .center-block :}  
+![RandomWalk](/img/RandomWalk1/RandomWalker1D.jpg "Multiple Random Walks"){: .center-block :}  
 In this post I will take a simple algorithm from its concept all the way to code, in essence learn to convert Maths into code. I feel coding a mathematical concept gives a deeper understanding of the underlying dynamics and allows for some fun experimentation while yielding some cool pictures. So let us start with Random Walk.
 
 The premise is that you start with a number on a number line, in the simple case a 0, then randomly pick either a 1 or a -1, say by tossing a coin. If you get a +1 then you take one step to the right, aka the positive side, whereas if you get a -1 then take one step to the left, the negative side. Now repeat the process of choosing 1 or -1, and subsequent moving, from this new position and keep repeating this multiple times. Simple enough?!
