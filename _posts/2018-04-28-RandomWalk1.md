@@ -8,7 +8,7 @@ tags: [Python, NumPy]
 comments: true
 ---
 
-![RandomWalk](/img/RandomWalk1/GaltonBoard.jpg "Galton Board"){: .center-block :}  
+![RandomWalk](/img/RandomWalk1/GaltonBoard.jpg "Galton Board"){: .center-block :}  [Code](https://github.com/probabilityfilter/Learn-Python/blob/master/RandomWalker/RandomWalk_1d_multiple%20walkers_histogram.py)
 In this post I will take a simple algorithm from its concept all the way to code, in essence learn to convert Maths into code. I feel coding a mathematical concept gives a deeper understanding of the underlying dynamics and allows for some fun experimentation while yielding some cool pictures. So let us start with Random Walk.
 
 The premise is that you start with a number on a number line, in the simple case a 0, then randomly pick either a 1 or a -1, say by tossing a coin. If you get a +1 then you take one step to the right, aka the positive side, whereas if you get a -1 then take one step to the left, the negative side. Now repeat the process of choosing 1 or -1, and subsequent moving, from this new position and keep repeating this multiple times. Simple enough?!
@@ -105,4 +105,4 @@ path =
 ```
 
 ### Improvement #3: Use `functions`
-For `functions` go to the next post: [Random Walk - Concept to Code: Part 2](https://probabilityfilter.github.io/2000-04-28-RandomWalk2/)
+For `functions` go to the next post: [Random Walk - Concept to Code, Part 2](https://probabilityfilter.github.io/2018-05-05-RandomWalk2/)
