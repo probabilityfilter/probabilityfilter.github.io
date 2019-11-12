@@ -56,4 +56,4 @@ plt.show()
 ```
 
 Now we are in a position to answer the question: how likely is it for the Random Walker to walk away from the starting position or return back to starting position? Best way to investigate it is to compute a large number of Random Walkers taking numerous steps and plotting a Histogram of the distribution. See the previous post for the result of simulating 10,000 Random Walkers each taking 1000 steps. To me this explains the [Galton Board](https://en.wikipedia.org/wiki/Bean_machine) behaviour where each peg is a random number generator pushing the ball either left or right, and when hundereds of balls are dropped most of then end up getting close to the starting position but there are few that meander far, never to return :worried:
-![GaltonBoard](/img/RandomWalk1/GB.mp4 "Galton Board in Action"){: .center-block :}
+![GaltonBoard](/img/RandomWalk1/GB.gif "Galton Board in Action"){: .center-block :}
