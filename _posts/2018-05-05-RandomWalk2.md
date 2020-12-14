@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Random Walk - Concept to Code, Part 2
+title: Random Walk - Concept to Code, Part 22
 subtitle: Start with a simple concept and learn to code it 
 thumbnail-img: /img/RandomWalk1/RandomWalker1D.jpg
 gh-repo: probabilityfilter/Learn-Python
