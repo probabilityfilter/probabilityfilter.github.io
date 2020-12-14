@@ -2,7 +2,7 @@
 layout: post
 title: Random Walk - Concept to Code, Part 2
 subtitle: Start with a simple concept and learn to code it 
-cover-img: /img/RandomWalk1/RandomWalker1D.jpg
+thumbnail-img: /img/RandomWalk1/RandomWalker1D.jpg
 gh-repo: probabilityfilter/Learn-Python
 gh-badge: [star, fork, follow]
 tags: [Python, NumPy]
